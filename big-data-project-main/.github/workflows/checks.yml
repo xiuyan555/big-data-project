@@ -33,4 +33,6 @@ jobs:
         with:
           version: "11.25.0"
       - run: pnpm install --frozen-lockfile
+        env:
+          PNPM_ALLOW_BUILD_SCRIPTS: "true"
       - run: pnpm build
